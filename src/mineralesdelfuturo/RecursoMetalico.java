@@ -18,6 +18,9 @@ public class RecursoMetalico extends Recurso {
 
     @Override
     public String requierePermiso(Recurso recurso) {
-        return null;
+        if (recurso instanceof RecursoMetalico){
+            return "Si requiere permiso";
+        }
+        return "No requiere permiso";
     }
 }
