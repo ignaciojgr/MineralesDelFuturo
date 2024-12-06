@@ -1,6 +1,6 @@
 package mineralesdelfuturo;
 
-public class RecursoMetalico extends Recurso {
+public class RecursoMetalico extends Recurso implements PermisoExtraccion{
 
     private Double valorMercado;
 
@@ -15,7 +15,7 @@ public class RecursoMetalico extends Recurso {
     @Override
     public void mostrarDatos() {
     }
-
+    
     @Override
     public String requierePermiso(Recurso recurso) {
         if (recurso instanceof RecursoMetalico){

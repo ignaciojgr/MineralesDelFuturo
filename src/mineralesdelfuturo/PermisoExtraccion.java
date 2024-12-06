@@ -1,5 +1,5 @@
 package mineralesdelfuturo;
 
 public interface PermisoExtraccion {
-    public String requierePermiso(Object object);
+    public String requierePermiso(Recurso recurso);
 }
